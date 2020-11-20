@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve (search for duplicates first)
 title: ''
-labels: 'bug'
+labels: bug
 assignees: ''
 
 ---
@@ -32,7 +32,7 @@ If the bug is related to the workspace, *always* provide a minimal reproducible 
 workspace, export it to a shareable ZIP file, and attach it to the ticket.
 
 Keep in mind your workspace of the project is not minimal reproducible example.
-Make a workspace only with elements cruicial for the bug.
+Make a workspace only with elements crucial for the bug.
 
 **Logs**
 

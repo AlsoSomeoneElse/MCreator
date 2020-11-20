@@ -26,7 +26,7 @@ Blockly.Blocks['cancel_event'] = {
 Blockly.Blocks['set_event_result'] = {
     init: function () {
         this.appendDummyInput().appendField(javabridge.t("blockly.block.set_event_result.line1"))
-        	.appendField(new Blockly.FieldDropdown([["DEFAULT","DEFAULT"], ["ALLOW","ALLOW"], ["DENY","DENY"]]), 'result');
+            .appendField(new Blockly.FieldDropdown([["DEFAULT", "DEFAULT"], ["ALLOW", "ALLOW"], ["DENY", "DENY"]]), 'result');
         this.appendDummyInput().appendField(new Blockly.FieldLabel(javabridge.t("blockly.block.set_event_result.line2"), 'small-text'));
         this.setPreviousStatement(true);
         this.setNextStatement(true);
@@ -273,10 +273,20 @@ Blockly.Blocks['java_code'] = {
     init: function () {
         this.appendDummyInput()
             .appendField(javabridge.t("blockly.block.java_code"))
-            .appendField(new Blockly.FieldTextInput("/*code*/"), 'CODE');
+            .appendField(new Blockly.FieldMultilineInput("/*code*/"), 'CODE');
         this.setPreviousStatement(true);
         this.setNextStatement(true);
         this.setColour(250);
+    }
+};
+
+Blockly.Blocks['java_code_get'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(javabridge.t("blockly.block.java_code"))
+            .appendField(new Blockly.FieldMultilineInput("(null)"), 'CODE');
+        this.setColour(250);
+        this.setOutput(true);
     }
 };
 
