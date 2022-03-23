@@ -43,7 +43,7 @@ public class BlocklyToFeature extends BlocklyToJava {
 
 	public BlocklyToFeature(Workspace workspace, String sourceXML, TemplateGenerator templateGenerator,
 			IBlockGenerator... externalGenerators) throws TemplateGeneratorException {
-		super(workspace, BlocklyEditorType.FEATURE.getStartBlockName(), sourceXML, templateGenerator,
+		super(workspace, "feature_container", sourceXML, templateGenerator,
 				externalGenerators);
 	}
 
@@ -53,20 +53,16 @@ public class BlocklyToFeature extends BlocklyToJava {
 		featureType = "";
 	}
 
-	@Override public void preBlocksPlacement(Document doc, Element startBlock) {
+	@Override public void preBlocksPlacement(Document doc, Element startBlock) throws TemplateGeneratorException {
 		super.preBlocksPlacement(doc, startBlock);
 
 		// Add the feature to the feature code
 		Element feature = XMLUtil.getFirstChildrenWithName(startBlock, "value");
 		if (feature != null) {
-			try {
-				featureConfigurationCode.append(directProcessOutputBlock(this, feature));
-				Element featureBlock = XMLUtil.getFirstChildrenWithName(feature, "block");
-				if (featureBlock != null)
-					this.featureType = featureBlock.getAttribute("type");
-			} catch (TemplateGeneratorException e) {
-				e.printStackTrace();
-			}
+			featureConfigurationCode.append(directProcessOutputBlock(this, feature));
+			Element featureBlock = XMLUtil.getFirstChildrenWithName(feature, "block");
+			if (featureBlock != null)
+				this.featureType = featureBlock.getAttribute("type");
 		} else
 			addCompileNote(new BlocklyCompileNote(BlocklyCompileNote.Type.ERROR,
 					L10N.t("blockly.errors.features.missing_feature")));

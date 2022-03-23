@@ -95,7 +95,7 @@ public class BlocklyToJava extends BlocklyToCode {
 	 * @param doc Blockly XML document
 	 * @param startBlock The basic block of the editor used to get other blocks.
 	 */
-	public void preBlocksPlacement(Document doc, Element startBlock) {}
+	public void preBlocksPlacement(Document doc, Element startBlock) throws TemplateGeneratorException {}
 
 	/**
 	 * <p>This method contains the code needing to be executed after blocks are placed.</p>
