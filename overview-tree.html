@@ -148,6 +148,7 @@ loadScripts(document, 'script');</script>
 <li><a href="net/mcreator/ui/minecraft/villagers/package-tree.html">net.mcreator.ui.minecraft.villagers</a>, </li>
 <li><a href="net/mcreator/ui/modgui/package-tree.html">net.mcreator.ui.modgui</a>, </li>
 <li><a href="net/mcreator/ui/modgui/codeviewer/package-tree.html">net.mcreator.ui.modgui.codeviewer</a>, </li>
+<li><a href="net/mcreator/ui/notifications/package-tree.html">net.mcreator.ui.notifications</a>, </li>
 <li><a href="net/mcreator/ui/procedure/package-tree.html">net.mcreator.ui.procedure</a>, </li>
 <li><a href="net/mcreator/ui/validation/package-tree.html">net.mcreator.ui.validation</a>, </li>
 <li><a href="net/mcreator/ui/validation/component/package-tree.html">net.mcreator.ui.validation.component</a>, </li>
@@ -198,6 +199,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">net.mcreator.ui.action.<a href="net/mcreator/ui/action/BasicAction.html" class="type-name-link" title="class in net.mcreator.ui.action">BasicAction</a>
 <ul>
 <li class="circle">net.mcreator.ui.action.impl.<a href="net/mcreator/ui/action/impl/AboutAction.html" class="type-name-link" title="class in net.mcreator.ui.action.impl">AboutAction</a></li>
+<li class="circle">net.mcreator.ui.action.impl.<a href="net/mcreator/ui/action/impl/CheckForPluginUpdatesAction.html" class="type-name-link" title="class in net.mcreator.ui.action.impl">CheckForPluginUpdatesAction</a></li>
 <li class="circle">net.mcreator.ui.action.impl.<a href="net/mcreator/ui/action/impl/CheckForUpdatesAction.html" class="type-name-link" title="class in net.mcreator.ui.action.impl">CheckForUpdatesAction</a></li>
 <li class="circle">net.mcreator.ui.action.impl.workspace.<a href="net/mcreator/ui/action/impl/workspace/EditTabOrderAction.html" class="type-name-link" title="class in net.mcreator.ui.action.impl.workspace">EditTabOrderAction</a></li>
 <li class="circle">net.mcreator.ui.action.impl.workspace.<a href="net/mcreator/ui/action/impl/workspace/ExportWorkspaceToZIPAction.html" class="type-name-link" title="class in net.mcreator.ui.action.impl.workspace">ExportWorkspaceToZIPAction</a></li>
@@ -817,8 +819,8 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">javax.swing.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JFrame.html" class="type-name-link external-link" title="class or interface in javax.swing">JFrame</a> (implements javax.accessibility.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/accessibility/Accessible.html" title="class or interface in javax.accessibility" class="external-link">Accessible</a>, javax.swing.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/RootPaneContainer.html" title="class or interface in javax.swing" class="external-link">RootPaneContainer</a>, javax.swing.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/WindowConstants.html" title="class or interface in javax.swing" class="external-link">WindowConstants</a>)
 <ul>
-<li class="circle">net.mcreator.ui.<a href="net/mcreator/ui/MCreator.html" class="type-name-link" title="class in net.mcreator.ui">MCreator</a> (implements net.mcreator.generator.<a href="net/mcreator/generator/IGeneratorProvider.html" title="interface in net.mcreator.generator">IGeneratorProvider</a>, net.mcreator.workspace.<a href="net/mcreator/workspace/IWorkspaceProvider.html" title="interface in net.mcreator.workspace">IWorkspaceProvider</a>)</li>
-<li class="circle">net.mcreator.ui.workspace.selector.<a href="net/mcreator/ui/workspace/selector/WorkspaceSelector.html" class="type-name-link" title="class in net.mcreator.ui.workspace.selector">WorkspaceSelector</a> (implements java.awt.dnd.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html" title="class or interface in java.awt.dnd" class="external-link">DropTargetListener</a>)</li>
+<li class="circle">net.mcreator.ui.<a href="net/mcreator/ui/MCreator.html" class="type-name-link" title="class in net.mcreator.ui">MCreator</a> (implements net.mcreator.generator.<a href="net/mcreator/generator/IGeneratorProvider.html" title="interface in net.mcreator.generator">IGeneratorProvider</a>, net.mcreator.ui.notifications.<a href="net/mcreator/ui/notifications/INotificationConsumer.html" title="interface in net.mcreator.ui.notifications">INotificationConsumer</a>, net.mcreator.workspace.<a href="net/mcreator/workspace/IWorkspaceProvider.html" title="interface in net.mcreator.workspace">IWorkspaceProvider</a>)</li>
+<li class="circle">net.mcreator.ui.workspace.selector.<a href="net/mcreator/ui/workspace/selector/WorkspaceSelector.html" class="type-name-link" title="class in net.mcreator.ui.workspace.selector">WorkspaceSelector</a> (implements java.awt.dnd.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html" title="class or interface in java.awt.dnd" class="external-link">DropTargetListener</a>, net.mcreator.ui.notifications.<a href="net/mcreator/ui/notifications/INotificationConsumer.html" title="interface in net.mcreator.ui.notifications">INotificationConsumer</a>)</li>
 </ul>
 </li>
 </ul>
@@ -1270,6 +1272,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">net.mcreator.plugin.events.workspace.<a href="net/mcreator/plugin/events/workspace/WorkspaceSavedEvent.CalledSavingMethod.html" class="type-name-link" title="class in net.mcreator.plugin.events.workspace">WorkspaceSavedEvent.CalledSavingMethod</a></li>
 </ul>
 </li>
+<li class="circle">net.mcreator.plugin.events.<a href="net/mcreator/plugin/events/WorkspaceSelectorLoadedEvent.html" class="type-name-link" title="class in net.mcreator.plugin.events">WorkspaceSelectorLoadedEvent</a></li>
 </ul>
 </li>
 <li class="circle">net.mcreator.vcs.diff.<a href="net/mcreator/vcs/diff/MergeHandle.html" class="type-name-link" title="class in net.mcreator.vcs.diff">MergeHandle</a>&lt;T&gt;</li>
@@ -1315,6 +1318,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">net.mcreator.generator.mapping.<a href="net/mcreator/generator/mapping/NameMapper.html" class="type-name-link" title="class in net.mcreator.generator.mapping">NameMapper</a></li>
 <li class="circle">net.mcreator.ui.dialogs.<a href="net/mcreator/ui/dialogs/NewModElementDialog.html" class="type-name-link" title="class in net.mcreator.ui.dialogs">NewModElementDialog</a></li>
 <li class="circle">net.mcreator.ui.dialogs.<a href="net/mcreator/ui/dialogs/NewVariableDialog.html" class="type-name-link" title="class in net.mcreator.ui.dialogs">NewVariableDialog</a></li>
+<li class="circle">net.mcreator.ui.notifications.<a href="net/mcreator/ui/notifications/NotificationsRenderer.html" class="type-name-link" title="class in net.mcreator.ui.notifications">NotificationsRenderer</a></li>
 <li class="circle">net.mcreator.blockly.java.blocks.<a href="net/mcreator/blockly/java/blocks/NullBlock.html" class="type-name-link" title="class in net.mcreator.blockly.java.blocks">NullBlock</a> (implements net.mcreator.blockly.<a href="net/mcreator/blockly/IBlockGenerator.html" title="interface in net.mcreator.blockly">IBlockGenerator</a>)</li>
 <li class="circle">net.mcreator.blockly.datapack.blocks.<a href="net/mcreator/blockly/datapack/blocks/NumberBlock.html" class="type-name-link" title="class in net.mcreator.blockly.datapack.blocks">NumberBlock</a> (implements net.mcreator.blockly.<a href="net/mcreator/blockly/IBlockGenerator.html" title="interface in net.mcreator.blockly">IBlockGenerator</a>)</li>
 <li class="circle">net.mcreator.blockly.java.blocks.<a href="net/mcreator/blockly/java/blocks/NumberBlock.html" class="type-name-link" title="class in net.mcreator.blockly.java.blocks">NumberBlock</a> (implements net.mcreator.blockly.<a href="net/mcreator/blockly/IBlockGenerator.html" title="interface in net.mcreator.blockly">IBlockGenerator</a>)</li>
@@ -1413,6 +1417,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">net.mcreator.minecraft.api.<a href="net/mcreator/minecraft/api/ModAPIImplementation.html" class="type-name-link" title="class in net.mcreator.minecraft.api">ModAPIImplementation</a></li>
 <li class="circle">net.mcreator.ui.help.<a href="net/mcreator/ui/help/ModElementHelpContext.html" class="type-name-link" title="class in net.mcreator.ui.help">ModElementHelpContext</a> (implements net.mcreator.ui.help.<a href="net/mcreator/ui/help/IHelpContext.html" title="interface in net.mcreator.ui.help">IHelpContext</a>)</li>
 <li class="circle">net.mcreator.blockly.data.<a href="net/mcreator/blockly/data/NamedInput.html" class="type-name-link" title="class in net.mcreator.blockly.data">NamedInput</a> (implements net.mcreator.blockly.data.<a href="net/mcreator/blockly/data/IInput.html" title="interface in net.mcreator.blockly.data">IInput</a>)</li>
+<li class="circle">net.mcreator.ui.notifications.<a href="net/mcreator/ui/notifications/NotificationsRenderer.ActionButton.html" class="type-name-link" title="class in net.mcreator.ui.notifications">NotificationsRenderer.ActionButton</a></li>
 <li class="circle">net.mcreator.generator.blockly.<a href="net/mcreator/generator/blockly/OutputBlockCodeGenerator.html" class="type-name-link" title="class in net.mcreator.generator.blockly">OutputBlockCodeGenerator</a> (implements net.mcreator.blockly.<a href="net/mcreator/blockly/IBlockGenerator.html" title="interface in net.mcreator.blockly">IBlockGenerator</a>)</li>
 <li class="circle">net.mcreator.plugin.<a href="net/mcreator/plugin/PluginLoadFailure.html" class="type-name-link" title="class in net.mcreator.plugin">PluginLoadFailure</a></li>
 <li class="circle">net.mcreator.plugin.<a href="net/mcreator/plugin/PluginUpdateInfo.html" class="type-name-link" title="class in net.mcreator.plugin">PluginUpdateInfo</a></li>
@@ -1473,7 +1478,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">net.mcreator.ui.dialogs.<a href="net/mcreator/ui/dialogs/SoundElementDialog.html" class="type-name-link" title="class in net.mcreator.ui.dialogs">SoundElementDialog</a></li>
 <li class="circle">net.mcreator.util.<a href="net/mcreator/util/SoundUtils.html" class="type-name-link" title="class in net.mcreator.util">SoundUtils</a></li>
 <li class="circle">net.mcreator.blockly.java.blocks.<a href="net/mcreator/blockly/java/blocks/SourceEntityDependencyBlock.html" class="type-name-link" title="class in net.mcreator.blockly.java.blocks">SourceEntityDependencyBlock</a> (implements net.mcreator.blockly.<a href="net/mcreator/blockly/IBlockGenerator.html" title="interface in net.mcreator.blockly">IBlockGenerator</a>)</li>
-<li class="circle">net.mcreator.ui.<a href="net/mcreator/ui/StartupNotifications.html" class="type-name-link" title="class in net.mcreator.ui">StartupNotifications</a></li>
+<li class="circle">net.mcreator.ui.notifications.<a href="net/mcreator/ui/notifications/StartupNotifications.html" class="type-name-link" title="class in net.mcreator.ui.notifications">StartupNotifications</a></li>
 <li class="circle">net.mcreator.element.parts.procedure.<a href="net/mcreator/element/parts/procedure/StringProcedure.GSONAdapter.html" class="type-name-link" title="class in net.mcreator.element.parts.procedure">StringProcedure.GSONAdapter</a> (implements com.google.gson.JsonDeserializer&lt;T&gt;)</li>
 <li class="circle">net.mcreator.util.<a href="net/mcreator/util/StringUtils.html" class="type-name-link" title="class in net.mcreator.util">StringUtils</a></li>
 <li class="circle">net.mcreator.ui.action.impl.workspace.resources.<a href="net/mcreator/ui/action/impl/workspace/resources/StructureImportActions.html" class="type-name-link" title="class in net.mcreator.ui.action.impl.workspace.resources">StructureImportActions</a></li>
@@ -1697,6 +1702,7 @@ loadScripts(document, 'script');</script>
 </li>
 </ul>
 </li>
+<li class="circle">net.mcreator.ui.notifications.<a href="net/mcreator/ui/notifications/INotificationConsumer.html" class="type-name-link" title="interface in net.mcreator.ui.notifications">INotificationConsumer</a></li>
 <li class="circle">net.mcreator.element.types.interfaces.<a href="net/mcreator/element/types/interfaces/IPOIProvider.html" class="type-name-link" title="interface in net.mcreator.element.types.interfaces">IPOIProvider</a></li>
 <li class="circle">net.mcreator.ui.workspace.<a href="net/mcreator/ui/workspace/IReloadableFilterable.html" class="type-name-link" title="interface in net.mcreator.ui.workspace">IReloadableFilterable</a></li>
 <li class="circle">net.mcreator.element.types.interfaces.<a href="net/mcreator/element/types/interfaces/ITabContainedElement.html" class="type-name-link" title="interface in net.mcreator.element.types.interfaces">ITabContainedElement</a></li>

@@ -96,6 +96,7 @@ net.mcreator.ui.minecraft.spawntypes
 net.mcreator.ui.minecraft.villagers
 net.mcreator.ui.modgui
 net.mcreator.ui.modgui.codeviewer
+net.mcreator.ui.notifications
 net.mcreator.ui.procedure
 net.mcreator.ui.validation
 net.mcreator.ui.validation.component
