@@ -89,6 +89,7 @@ net.mcreator.ui.init
 net.mcreator.ui.laf
 net.mcreator.ui.laf.renderer
 net.mcreator.ui.laf.renderer.elementlist
+net.mcreator.ui.laf.renderer.elementlist.special
 net.mcreator.ui.minecraft
 net.mcreator.ui.minecraft.boundingboxes
 net.mcreator.ui.minecraft.loottable
@@ -96,6 +97,7 @@ net.mcreator.ui.minecraft.potions
 net.mcreator.ui.minecraft.recipemakers
 net.mcreator.ui.minecraft.spawntypes
 net.mcreator.ui.minecraft.states
+net.mcreator.ui.minecraft.states.entity
 net.mcreator.ui.minecraft.states.item
 net.mcreator.ui.minecraft.villagers
 net.mcreator.ui.modgui
@@ -131,5 +133,6 @@ net.mcreator.util.math
 net.mcreator.workspace
 net.mcreator.workspace.elements
 net.mcreator.workspace.misc
+net.mcreator.workspace.references
 net.mcreator.workspace.resources
 net.mcreator.workspace.settings
