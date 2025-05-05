@@ -122,6 +122,7 @@ net.mcreator.ui.modgui
 net.mcreator.ui.modgui.codeviewer
 net.mcreator.ui.notifications
 net.mcreator.ui.procedure
+net.mcreator.ui.search
 net.mcreator.ui.validation
 net.mcreator.ui.validation.component
 net.mcreator.ui.validation.optionpane
