@@ -24,7 +24,7 @@ ATTACK_SPEED:
   - "minecraft:attack_speed"
 BELOW_NAME_DISTANCE:
   - Attributes.BELOW_NAME_DISTANCE
-  - "minecraft:below_name_modifier"
+  - "minecraft:below_name_distance"
 BLOCK_BREAK_SPEED:
   - Attributes.BLOCK_BREAK_SPEED
   - "minecraft:block_break_speed"
